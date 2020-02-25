@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='parlour',
-    version='0.0.1',
+    version='0.0.2',
     author="Jack Whitehorn",
     author_email="jackwh.whitehorn@gmail.com",
     description="A python-based system-independent community-driven setup tool",
@@ -21,8 +21,9 @@ setuptools.setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
-        'License :: OSI Approved :: GNU License',
-        'Operating System :: OS Independent',
+        'Programming Language :: Unix Shell',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+        'Operating System :: Unix',
     ],
     python_requires='>=3.6',
 
@@ -33,8 +34,5 @@ setuptools.setup(
     entry_points='''
         [console_scripts]
         parlour=parlour.main:cli
-    ''',
-    project_urls={  # Optional
-        'Source': 'https://github.com/jw2476/parlour',
-    },
+    '''
 )
